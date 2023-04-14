@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error | Quick.ly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    {% include "scroll.html" %}
+</head>
+
+<body id="journal-scroll">
+    <main>
+        <div class="bg-indigo-900 relative overflow-hidden h-screen">
+            <img src="{{ bg }}" class="absolute h-full w-full object-cover  bg-fixed" />
+            <!-- <img src="https://raw.githubusercontent.com/HeimanPictures/tool/main/images/error.svg" class="absolute h-full w-full object-cover" /> -->
+            <div class="inset-0 bg-black opacity-25 absolute">
+            </div>
+            <div class="container mx-auto px-6 md:px-12 relative z-10 flex items-center py-32 xl:py-40">
+                <div class="w-full font-mono flex flex-col items-center relative z-10">
+                    <h1 class="font-extrabold text-5xl text-center text-white leading-tight mt-4">
+                        <!-- Description -->
+                        The url you visit is having error.
+                    </h1>
+                    <p class="font-extrabold text-8xl my-44 text-white animate-bounce">
+                        <!-- Error Code -->
+                        404
+                        <br>
+                        <spam class="font-extrabold text-4xl text-center text-white leading-tight mt-4">
+                            <!-- Sub-Description -->
+                            Not Found
+                        </spam>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

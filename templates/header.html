@@ -1,0 +1,41 @@
+<header class="text-gray-100 body-font fixed top-0 w-full shadow-lg z-50 transition-all duration-300 ease-in-out">
+    <div class="container flex flex-row flex-wrap items-center p-5 mx-auto">
+        <a class="flex-grow font-semibold text-2x1" href="/">
+        Quick.ly
+        </a>
+        <nav class="flex flex-wrap items-center justify-center text-base md:ml-auto">
+            <a href="/" class="mr-6 cursor-pointer hover:text-orange-600 ">Home</a>
+            <a href="/secured" class="mr-6 cursor-pointer hover:text-orange-600">Secure Shortener</a>
+            <a href="/report" class="mr-6 cursor-pointer hover:text-orange-600">Report</a>
+            <a href="/contact" class="mr-6 cursor-pointer hover:text-orange-600">Contact</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+            <div v-if="loggedIn">
+                <span class="whitespace-nowrap rounded-full px-2.5 py-0.5 text-sm">
+                Hi,
+                <span class="text-blue-600">Buddy</span>
+                </span>
+
+            </div>
+            <div v-else class="flex items-center gap-2">
+                {% if auth %}
+                <a href="/signout" class="inline-flex items-center px-3 py-1 mt-4 text-white border border-white rounded hover:bg-blue-600 hover:border-transparent focus:outline-none md:mt-0 select-none">Logout</a> {% else %}
+                <a href="/signin" class="inline-flex items-center px-3 py-1 mt-4 text-white border-0 rounded bg-orange-600 focus:outline-none hover:bg-blue-600 md:mt-0 select-none">Signin</a>
+                <a href="/signup" class="inline-flex items-center px-3 py-1 mt-4 text-white border border-white rounded hover:bg-blue-600 hover:border-transparent focus:outline-none md:mt-0 select-none">Signup</a> {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(window).on("scroll", function() {
+            if ($(window).scrollTop() > 50) {
+                $("header").addClass("bg-gray-800 bg-opacity-60");
+            } else {
+                // remove the background color when the header is not being scrolled
+                $("header").removeClass("bg-gray-800 bg-opacity-60");
+            }
+        });
+    </script>
+</header>
