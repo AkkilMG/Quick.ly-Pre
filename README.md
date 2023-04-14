@@ -29,4 +29,3 @@ python main.py
 - [Python](https://www.python.org/)
 - [Fastapi](https://fastapi.tiangolo.com/)
 - [MongoDB](https://www.mongodb.com/)
-- [CreativeTim](https://github.com/creativetimofficial/) for Dashboard template.
