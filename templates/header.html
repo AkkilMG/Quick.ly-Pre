@@ -16,13 +16,6 @@
                 Hi,
                 <span class="text-blue-600">Buddy</span>
                 </span>
-
-            </div>
-            <div v-else class="flex items-center gap-2">
-                {% if auth %}
-                <a href="/signout" class="inline-flex items-center px-3 py-1 mt-4 text-white border border-white rounded hover:bg-blue-600 hover:border-transparent focus:outline-none md:mt-0 select-none">Logout</a> {% else %}
-                <a href="/signin" class="inline-flex items-center px-3 py-1 mt-4 text-white border-0 rounded bg-orange-600 focus:outline-none hover:bg-blue-600 md:mt-0 select-none">Signin</a>
-                <a href="/signup" class="inline-flex items-center px-3 py-1 mt-4 text-white border border-white rounded hover:bg-blue-600 hover:border-transparent focus:outline-none md:mt-0 select-none">Signup</a> {% endif %}
             </div>
         </div>
     </div>
