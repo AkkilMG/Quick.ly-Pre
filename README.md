@@ -1,4 +1,4 @@
-# FastApi-Boiler
+# Quick.ly-Pre
 
 ## Description
 
@@ -12,23 +12,7 @@
 - [x] Contact page
 - [x] Blogs page
 - [x] Report link
-- [ ] User
-    - [ ] Dashboard page
-    - [ ] Profile
-    - [x] Links
-    - [ ] Analytics
-    - [ ] Settings
-- [ ] Admin
-    - [ ] Dashboard page
-    - [ ] Settings
-    - [ ] Users
-    - [ ] Links
-    - [ ] Analytics
-- [ ] Cache
-- [ ] Cookie
-- [x] API (for developers)
-- [ ] Documentation
-
+- [x] Delete page
 
 ## Installation
 
