@@ -5,7 +5,6 @@
 Quick.ly is a url shortener made with python and fastapi. It uses MongoDB as a database.
 
 
-
 ## Features
 
 - [x] Home page
@@ -22,12 +21,13 @@ Quick.ly is a url shortener made with python and fastapi. It uses MongoDB as a d
 ### Shortener
 
 <center>
-    <img src="./readme-assets/home.png" width="50%" height="50%" alt="Shorten"/>
+    <img src="./readme-assets/home.png" width="50%" height="50%" alt="Shorten" />
 </center>
 
 ### Secured Shortener
+
 <center>
-    <img src="./readme-assets/secured.png" width="50%" height="50%" alt="Secured"/>
+    <img src="./readme-assets/Secured.png" width="50%" height="50%" alt="Shorten" />
 </center>
 
 ## Installation
