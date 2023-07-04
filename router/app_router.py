@@ -77,7 +77,7 @@ async def securedShortHome(request: Request):
     })
     context={
         "request": request,
-        "scode": f"{DOMAIN}secured/{scode}",
+        "scode": f"{DOMAIN}/secured/{scode}",
         "password": password,
         "bg": request.url_for("static", path="home.jpg")
     }
