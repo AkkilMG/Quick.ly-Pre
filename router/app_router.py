@@ -44,7 +44,7 @@ async def home(request: Request):
     })
     context={
         "request": request,
-        "short": f"{DOMAIN}s/{short}",
+        "short": f"{DOMAIN}/s/{short}",
         "bg": request.url_for("static", path="home.jpg")
     }
     return templates.TemplateResponse("home.html", context)
